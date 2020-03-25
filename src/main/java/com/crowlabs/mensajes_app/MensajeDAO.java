@@ -131,7 +131,7 @@ public class MensajeDAO {
                 ps.setString(2, synchronizedFormat(new Date()));
                 ps.setInt(3, mensaje.getId_mensaje());                
                 ps.executeUpdate();
-
+                
                 System.out.println("Mensaje Actualizado");
             } catch (Exception e) {
                 System.out.println(e.getMessage());
